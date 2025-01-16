@@ -6,6 +6,17 @@
     background-color: #E1EEFF;
 }
 
+*img {
+    position: relative;
+    background-color: transparent;
+    z-index: -1;
+}
+
+*svg {
+    position: relative;
+    z-index: 1;
+}
+
 
 .open-sans-uniquifier> {
   font-family: "Open Sans", serif;
@@ -15,11 +26,35 @@
   font-variation-settings: "wdth" 100;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+
+ ::-webkit-scrollbar-track {
+    background: #909090; 
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #007bff; 
+    border-radius: 6px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #003063; 
+}
+
+
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
+
+
 
 
 /* HEADER */
@@ -151,9 +186,10 @@ button.signup:hover {
 }
 
 .traco-titulo-home{
-    position: absolute;
+    background-color: transparent;
+    position: relative;
     left: 170px;
-    top: 590px;
+    bottom: 20px;
     margin-top: 5px;
 
 }
@@ -175,6 +211,7 @@ button.signup:hover {
     background: #FFFFFF;
     border-radius: 50px;
     box-shadow: #000000;
+    z-index: 1;
 
 }
 
@@ -208,6 +245,8 @@ button.signup:hover {
     width: 20px;
     cursor: pointer;
 }
+
+/* grupo 2 */
 
 .location-emoji-barra svg{
     position: relative;
@@ -244,3 +283,79 @@ button.signup:hover {
     cursor: pointer;
 }
 
+.elipse-home {
+    margin-bottom: 0;
+    position: relative;
+}
+
+.elipse-home img{
+    background: none;
+    position: absolute;
+    width: 62%;
+    height: auto;
+    margin: 0 auto;
+    left: 1110px;
+    bottom: 10px;
+}
+
+.quadrado-home img{
+    background: none;
+    position: relative;
+    bottom: 9px;
+}
+
+.container-imagens {
+    position: relative; /* Contêiner relativo para as imagens */
+    width: 100%;
+    height: auto; /* Defina conforme necessário */
+}
+
+.foto-medico img {
+    margin: 0;
+    background-color: transparent;
+    position: absolute;
+    bottom: 13px;
+    height: 1250px;
+    left: 50%;
+    margin: 0 auto;
+    max-height: 1300px;
+}
+
+.parte-1-quadrado-azul img {
+    background-color: transparent;
+    position: absolute;
+    bottom: 50px;
+    left: 6.5%;
+    margin: 0 auto;
+}
+
+.traco-1-quadrado-azul img {
+    background-color: transparent;
+    position: absolute;
+    bottom: 50px;
+    height: 185px;
+    left: 20%;
+}
+
+.parte-2-quadrado-azul img {
+    background-color: transparent;
+    position: absolute;
+    bottom: 50px;
+    left: 24.9%;
+    margin: 0 auto;
+}
+
+.traco-2-quadrado-azul img {
+    background-color: transparent;
+    position: absolute;
+    bottom: 50px;
+    height: 185px;
+    left: 39%;
+}
+
+.parte-3-quadrado-azul img {
+    background-color: transparent;
+    position: absolute;
+    bottom: 50px;
+    left: 41.5%;
+}
