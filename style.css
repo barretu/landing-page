@@ -17,6 +17,25 @@
     z-index: 1;
 }
 
+    body {
+    margin: 0;
+}
+
+    section + section {
+    margin-top: 0;
+}
+
+    section {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, p, section {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 
 .open-sans-uniquifier> {
   font-family: "Open Sans", serif;
@@ -95,36 +114,31 @@ nav a::after {
     position: absolute;
     bottom: 0; 
     left: 0;
-    width: 0; /* Inicialmente, a largura da linha é 0 */
-    height: 4px; /* Altura da linha */
-    background: #007bff; /* Cor da listrinha */
-    transition: width 0.3s ease; /* Animação suave para o efeito de expansão */
+    width: 0; 
+    height: 4px; 
+    background: #007bff; 
+    transition: width 0.3s ease; 
 }
 
 nav a:hover::after {
-    width: 100%; /* Expande a linha para toda a largura do link ao passar o mouse */
+    width: 100%; 
 }
 
 nav a:hover {
-    color: #007bff; /* Opcional: muda a cor do texto no hover */
-}
-
-button {
-    font-size: 1.3rem;
-    padding: 0.5rem 1.5rem;
-    border-radius: 50px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
-    top: 45px;
-    left: 1057px;
+    color: #007bff; 
 }
 
 button.login {
     background: transparent;
     color: #0360D9;
     border: 2px solid #0360D9;
+    font-size: 1.3rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 
 button.login:hover {
@@ -138,6 +152,13 @@ button.signup {
     margin-left: 1.5rem;
     color: #0360D9;
     border: 2px solid #0360D9;
+    font-size: 1.3rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 
 button.signup:hover {
@@ -149,6 +170,8 @@ button.signup:hover {
 
 #home  {
     background-color: #E1EEFF;
+    margin: 0; 
+    padding: 0;
 }
 
 #home h1 {
@@ -298,16 +321,30 @@ button.signup:hover {
     bottom: 10px;
 }
 
+    .quadrado-home {
+        display: contents;
+        margin: 0;
+        padding: 0;
+        border: none;
+        height: auto; /* Permite que a altura seja apenas a necessária */
+        width: auto; /* Permite que a largura seja apenas a necessária */
+}
+
 .quadrado-home img{
-    background: none;
     position: relative;
     bottom: 9px;
+    margin: 0;
+    
 }
 
 .container-imagens {
-    position: relative; /* Contêiner relativo para as imagens */
-    width: 100%;
-    height: auto; /* Defina conforme necessário */
+    background-color: #FFFFFF;
+    position: relative; 
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important; 
+    border: none !important;
+
 }
 
 .foto-medico img {
@@ -358,4 +395,84 @@ button.signup:hover {
     position: absolute;
     bottom: 50px;
     left: 41.5%;
+}
+
+#about {
+    background-color: #FFFFFF;
+    height: 1000px;
+    margin: 0; 
+    padding: 0;
+}
+
+#about h1 {
+    background-color: #FFFFFF;
+}
+
+#about p {
+    background-color: #FFFFFF;
+}
+
+.titulo-about {
+    background-color: #FFFFFF;
+    color: #2E2E2E;
+    font-size: 48px;
+    position: relative;
+    bottom: -250px;
+    left: 6.5%;
+}
+
+.buttons-about {
+    background-color: #FFFFFF;
+}
+
+
+.buttons-about button{
+    background: none;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    position: relative;
+    width: 420px;
+    height: 420px;
+    border: 1px solid #021526;
+    border-radius: 20px;
+    cursor: pointer;
+    top: 300px;
+    left: 6.5%;
+    margin: 0 100px;
+    flex: 1 1 auto;
+    max-width: 420px;
+}
+
+.covid {
+    position: relative;
+    background-color: transparent;
+    color: #021526;
+    font-size: 40px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+    padding-right: 3.5%;
+    
+}
+
+.covid:hover {
+    background: #0360D9;
+    color: white;
+}
+
+.covid p {
+    background-color: transparent !important;
+    font-size: 24px;
+    padding-right: 3,5%;
+    margin: 10px 0 0;
+    color: #163048;
+}
+
+.covid:hover p {
+    background: #0360D9;
+    color: white;
+}
+
+
+#history {
+    background-color: #FFFFFF;
 }
