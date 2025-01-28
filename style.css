@@ -52,7 +52,7 @@
 
 
  ::-webkit-scrollbar-track {
-    background: #909090; 
+    background: #ffffff; 
 }
 
  ::-webkit-scrollbar-thumb {
@@ -61,7 +61,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #003063; 
+    background: #0259b5; 
 }
 
 
@@ -205,7 +205,6 @@ button.signup:hover {
     background-color: transparent;
     display: inline-block;
     position: relative;
-    padding-bottom: 5px;
 }
 
 .traco-titulo-home{
@@ -321,13 +320,13 @@ button.signup:hover {
     bottom: 10px;
 }
 
-    .quadrado-home {
-        display: contents;
-        margin: 0;
-        padding: 0;
-        border: none;
-        height: auto; /* Permite que a altura seja apenas a necessária */
-        width: auto; /* Permite que a largura seja apenas a necessária */
+.quadrado-home {
+    display: contents;
+     margin: 0;
+    padding: 0;
+    border: none;
+    height: auto; 
+    width: auto; 
 }
 
 .quadrado-home img{
@@ -422,11 +421,11 @@ button.signup:hover {
 }
 
 .button-container {
-    display: flex; /* Organiza os itens em uma linha */
-    gap: 100px; /* Espaço entre os botões */
-    justify-content: center; /* Centraliza os botões horizontalmente */
-    padding: 20px; /* Espaçamento interno ao redor do contêiner */
-    flex-wrap: wrap; /* Permite que os botões quebrem linha se a tela for menor */
+    display: flex; 
+    gap: 100px; 
+    justify-content: center; 
+    padding: 20px; 
+    flex-wrap: wrap; 
     background-color: #FFFFFF;
     margin-top: 300px;
   }
@@ -489,7 +488,7 @@ button.signup:hover {
   }
 
   .custom-button:hover .button-content {
-    background-color: transparent; /* Fundo muda para azul escuro */
+    background-color: transparent; 
   }
   
   .custom-button:hover .button-title {
@@ -565,6 +564,195 @@ button.signup:hover {
     color: #013770;
   }
 
+  /* APPLICATION */
+
+#application {
+    height: 1000px;
+    margin: 0; 
+    padding: 0;
+}
+
+.titulo-application {
+    background-color: transparent;
+    position: relative;
+    font-size: 48px;
+    bottom: -250px;
+    left: 6.5%;
+}
+
+.paragrafo-application {
+    position: relative;
+    background-color: transparent;
+    color: #2E2E2E;
+    font-size: 26px;
+    left: 6.5%;
+    bottom: -29%;
+}
+
+.icones-application {
+    position: relative;
+    left: 6.5%;
+    bottom: -35%;
+}
+
+.paragrafo-reviews-application {
+    position: relative;
+    margin: 0;
+    width: 200px;
+    font-size: 26px;
+    color: #2E2E2E;
+    font-weight: 600;
+    left: 28%;
+    bottom: -28.5%;
+}
+
+.paragrafo-reviews-application p {
+    width: 200px;
+}
+
+.comentario-application {
+    position: relative;
+    left: 47%;
+    bottom: 20%;
+}
+
+/* HISTORY */
+
 #history {
     background-color: #FFFFFF;
+    height: 2150px;
+}
+
+#history h1 {
+    background-color: #FFFFFF;
+}
+
+#history p {
+    background-color: #FFFFFF;
+}
+
+.titulo-history {
+    position: relative;
+    font-size: 48px;
+    left: 6.5%;
+    bottom: -250px;
+    width: 600px;
+}
+
+.titulo-history h1 {
+    width: 600px;
+}
+
+.paragrafo-1-history {
+    position: relative;
+    font-size: 26px;
+    left: 6.5%;
+    bottom: -15%;
+    
+}
+
+.paragrafo-2-history {
+    position: relative;
+    font-size: 26px;
+    left: 6.5%;
+    bottom: -17%;
+}
+
+.paragrafo-3-history {
+    position: relative;
+    font-size: 26px;
+    left: 6.5%;
+    bottom: -19%;
+}
+
+.foto-medico-history {
+    position: relative;
+    background-color: #FFFFFF;
+    left: 53%;
+    bottom: 180px;
+}
+
+.foto-medico-history img {
+    background-color: #FFFFFF;
+    width: 1000px;
+    height: 690px;
+}
+
+.learn-more-history {
+    background-color: #FFFFFF;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0360D9; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    left: 6.5%;
+    bottom: 11%;
+  }
+
+  .learn-more-history:hover {
+    color: #013770;
+  }
+
+  .texto-caixa-azul-history {
+    position: relative;
+    font-size: 40px;
+    left: 36.5%;
+    bottom: -230px;
+    color: #FFFFFF;
+    background-color: transparent;
+    z-index: 1;
+  }
+
+  .texto-caixa-azul-history h1 {
+    background-color: transparent !important;
+    max-width: 1290px;
+  }
+
+  .quadrado-azul-history {
+    background-color: transparent !important;
+    position: relative;
+    left: 22%;
+    margin: 0;
+  }
+
+  .quadrado-azul-history img {
+    background-color: transparent !important;
+    width: 1650px;
+    height: 600px;
+  }
+
+  .barra-pesquisa-history {
+    background-color: transparent;
+    position: relative;
+    left: 28%;
+    bottom: 14%;
+  }
+
+  .barra-pesquisa-history img {
+    background-color: transparent;
+    width: 1300px;
+  }
+
+  .botao-pesquisa-history {
+    background-color: transparent;
+    position: relative;
+    left: 69.5%;
+    bottom: 19.2%;
+  }
+
+  .botao-pesquisa-history img {
+    background-color: transparent;
+    width: 100px;
+  }
+
+#footer {
+    background-color: #0360D9 !important;
+    height: 500px;
+}
+
+#footer p {
+    background-color: #0360D9 !important;
 }
