@@ -6,6 +6,10 @@
     background-color: #E1EEFF;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 *img {
     position: relative;
     background-color: transparent;
@@ -19,6 +23,7 @@
 
     body {
     margin: 0;
+    
 }
 
     section + section {
